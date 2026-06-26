@@ -1,10 +1,7 @@
-// Primitives
 let learnerName: string = "Marufa";
-let practiceHour: number = 1;
+let practiceHour: number = 2;
 
-// A basic strong-typed function
-function displayProgress(name: string, hours: number): string {
-    return `${name} has been practicing TypeScript for ${hours} hour!`;
+function displayProgress(name: string,hours: number): void{
+    console.log('Hello ' + name + ', you have completed ' + hours + 'hours of practice today!');
 }
-
-console.log(displayProgress(learnerName, practiceHour));
+displayProgress(learnerName,practiceHour);
