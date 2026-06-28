@@ -32,7 +32,7 @@ body{
     font-weight: 300;
     color: #DDB130;
 }
-.startbtn{
+.startbtn,.homebtn{
     height: 40px;
     width: 150px;
     border-radius: 20px;
@@ -41,7 +41,7 @@ body{
     border: none;
     outline: none;
 }
-.startbtn:hover{
+.startbtn:hover,.homebtn:hover{
     background: #f4c842;
     transform: scale(1.02);
     transform-origin: all 0.1s ease-in-out;
@@ -107,4 +107,8 @@ body{
 }
 #windSpeed,#humidity{
     font-weight: bold;
+}
+#info{
+    font-size: 11px;
+    margin-bottom: 5px;
 }
