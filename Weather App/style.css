@@ -22,3 +22,27 @@ body{
     flex-direction: column;
     color: white;
 }
+.weather{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.forecast{
+    font-size: 15px;
+    font-weight: 300;
+    color: #DDB130;
+}
+.startbtn{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #DDB130;
+    color: black;
+    border: none;
+    outline: none;
+}
+.startbtn:hover{
+    background: #f4c842;
+    transform: scale(1.02);
+    transform-origin: all 0.1s ease-in-out;
+}
