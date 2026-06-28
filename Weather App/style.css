@@ -46,3 +46,11 @@ body{
     transform: scale(1.02);
     transform-origin: all 0.1s ease-in-out;
 }
+.searchBox{
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
