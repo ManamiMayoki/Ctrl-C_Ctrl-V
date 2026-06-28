@@ -101,3 +101,10 @@ body{
     display: flex;
     align-items: center;
 }
+#windIcon,#humidityIcon{
+    width: 50px;
+    margin-right: 5px;
+}
+#windSpeed,#humidity{
+    font-weight: bold;
+}
