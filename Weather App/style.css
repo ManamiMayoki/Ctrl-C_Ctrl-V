@@ -54,3 +54,50 @@ body{
     align-items: center;
     justify-content: space-between;
 }
+.searchBox input{
+    width: 250px;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+    padding-left: 5px;
+    background-origin: padding-box;
+}
+.img img{
+    width: 20px;
+    margin-right: 10px;
+}
+.iconBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iconBox img{
+    width: 180px;
+}
+.tempBox{
+    height: 100px;
+    width: 280px;
+    text-align: center;
+}
+#temp{
+    font-family: arial,Helvetica,sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+}
+#city{
+    font-size: 30px;
+    font-weight: 300;
+    color:#DDB130;
+}
+.extraDetails{
+    height: 100px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wind,.humidity{
+    display: flex;
+    align-items: center;
+}
