@@ -8,7 +8,9 @@ const wind=document.querySelector("#windSpeed");
 const humidity=document.querySelector("#humidity");
 const goHome=document.querySelector(".homwbtn");
 const icon=document.querySelector("#icon");
-
+const mainBox1=document.querySelector(".mainBox1");
+const mainBox2=document.querySelector(".mainBox2");
+const mainBox3=document.querySelector(".mainBox3");
 
 
 const url = "https://api.openweathermap.org/data/2.5/weather?";
