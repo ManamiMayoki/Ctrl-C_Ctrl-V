@@ -112,3 +112,6 @@ body{
     font-size: 11px;
     margin-bottom: 5px;
 }
+.inactive{
+    display: none;
+}
