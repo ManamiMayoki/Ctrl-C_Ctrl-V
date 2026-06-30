@@ -41,10 +41,20 @@ async function getWeatherData(city) {
   if (weatherData.cod == 404) {
     mainBox2.classList.add("inactive");
     mainBox3.classList.remove("inactive");
+
+    desc.innerHTML="description";
+    temp.innerHTML="0°C";
+    cityName.innerHTML="New York";
+    wind.innerHTML="0km/h";
+    humidity.innerHTML="0%";
+    search.value="";
+    icon.src="/Images/clear.png";
+
+    return;
   }
 
   desc.innerHTML=weatherData.weather[0].description;
-  temp.innerHTML=Map.round(weatherData.main.temp-273.15)+"°C";
+  temp.innerHTML=Math.round(weatherData.main.temp-273.15)+"°C";
   cityName.innerHTML=weatherData.name;
   wind.innerHTML=weatherData.wind.speed+"km/h";
   humidity.innerHTML=weatherData.main.humidity+"%";
