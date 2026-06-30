@@ -34,6 +34,7 @@ async function getWeatherData(city) {
   desc.innerHTML=weatherData.weather[0].description;
   temp.innerHTML=Map.round(weatherData.main.temp-273.15)+"°C";
   cityName.innerHTML=weatherData.name;
+  wind.innerHTML=weatherData.wind.speed+"km/h";
 }
 
 goHome.addEventListener("click",()=>{
