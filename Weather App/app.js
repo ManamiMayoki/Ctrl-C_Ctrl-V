@@ -27,4 +27,8 @@ async function getWeatherData(city){
     let response=await fetch(finalUrl);
     let weatherData = await response.json();
     console.log(weatherData);
+
+    if(weatherData.cod ==404){
+        main
+    }
 }
