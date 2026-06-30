@@ -3,7 +3,7 @@ const search = document.querySelector("#inputField");
 const searchIcon = document.querySelector("#searchIcon");
 const desc = document.querySelector("#description");
 const temp = document.querySelector("#temp");
-const city = document.querySelector("#city");
+const cityName = document.querySelector("#city");
 const wind = document.querySelector("#windSpeed");
 const humidity = document.querySelector("#humidity");
 const goHome = document.querySelector(".homebtn");
@@ -32,7 +32,8 @@ async function getWeatherData(city) {
   }
 
   desc.innerHTML=weatherData.weather[0].description;
-  temp.innerHTML=Map.round(weatherData.main.temp-273.15);
+  temp.innerHTML=Map.round(weatherData.main.temp-273.15)+"°C";
+  cityName.innerHTML=weatherData.name;
 }
 
 goHome.addEventListener("click",()=>{
