@@ -26,6 +26,7 @@ function changeIcon(weatherMain){
         Snow: "Images/snow.png",
         Clear: "Images/clear.png"
     };
+    icon.src=icons[weatherMain] || "/Images/clear.png";
 }
 
 const url = "https://api.openweathermap.org/data/2.5/weather?";
@@ -47,6 +48,8 @@ async function getWeatherData(city) {
   cityName.innerHTML=weatherData.name;
   wind.innerHTML=weatherData.wind.speed+"km/h";
   humidity.innerHTML=weatherData.main.humidity+"%";
+
+  changeIcon(weatherData.weather[0].main);
 }
 
 searchIcon.addEventListener("click",()=>{
