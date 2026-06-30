@@ -35,7 +35,10 @@ async function getWeatherData(city) {
   temp.innerHTML=Map.round(weatherData.main.temp-273.15)+"°C";
   cityName.innerHTML=weatherData.name;
   wind.innerHTML=weatherData.wind.speed+"km/h";
+  humidity.innerHTML=weatherData.main.humidity+"%";
 }
+
+
 
 goHome.addEventListener("click",()=>{
     mainBox3.classList.add("inactive");
