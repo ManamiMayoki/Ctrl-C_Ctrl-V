@@ -42,6 +42,12 @@ searchIcon.addEventListener("click",()=>{
     getWeatherData(search.value);
 })
 
+search.addEventListener("keypress",(e)=>{
+    if(e.key==Enter){
+        getWeatherData(search.value);
+    }
+})
+
 goHome.addEventListener("click",()=>{
     mainBox3.classList.add("inactive");
     mainBox1.classList.remove("inactive");
