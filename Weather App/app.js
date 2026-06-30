@@ -38,7 +38,9 @@ async function getWeatherData(city) {
   humidity.innerHTML=weatherData.main.humidity+"%";
 }
 
-
+searchIcon.addEventListener("click",()=>{
+    getWeatherData(search.value);
+})
 
 goHome.addEventListener("click",()=>{
     mainBox3.classList.add("inactive");
