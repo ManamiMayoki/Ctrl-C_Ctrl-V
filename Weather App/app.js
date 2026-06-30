@@ -17,6 +17,17 @@ startbtn.addEventListener("click", () => {
   mainBox2.classList.remove("inactive");
 });
 
+function changeIcon(weatherMain){
+    let icons={
+        Clouds: "Images/clouds.png",
+        Rain: "Images/rain.png",
+        Mist: "Images/mist.png",
+        Haze: "Images/haze.png",
+        Snow: "Images/snow.png",
+        Clear: "Images/clear.png"
+    };
+}
+
 const url = "https://api.openweathermap.org/data/2.5/weather?";
 const apiKey = "2384797dde82a98f0c48c207d447b336";
 
@@ -43,7 +54,7 @@ searchIcon.addEventListener("click",()=>{
 })
 
 search.addEventListener("keypress",(e)=>{
-    if(e.key==Enter){
+    if(e.key=="Enter"){
         getWeatherData(search.value);
     }
 })
