@@ -31,3 +31,8 @@ async function getWeatherData(city) {
     mainBox3.classList.remove("inactive");
   }
 }
+
+goHome.addEventListener("click",()=>{
+    mainBox3.classList.add("inactive");
+    mainBox1.classList.remove("inactive");
+})
