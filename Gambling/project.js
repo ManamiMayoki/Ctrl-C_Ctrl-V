@@ -37,3 +37,5 @@ const deposit=()=>{
     // even if they type numbers like "50".
     const depositAmount=prompt("Enter a deposit amount:");
 }
+
+deposit();
