@@ -7,10 +7,12 @@
 // 7. Play again
 
 
-function deposit(){
+// function deposit(){
+//     return 1;
+// }
+
+const deposit=()=>{
     return 1;
 }
 
-const x=deposit();
-
-console.log(x);
+console.log(deposit());
