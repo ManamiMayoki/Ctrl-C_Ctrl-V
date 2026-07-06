@@ -37,4 +37,5 @@ const deposit = () => {
   }
 };
 
-deposit();
+const depositAmount=deposit();
+console.log(depositAmount);
