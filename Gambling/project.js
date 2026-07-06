@@ -20,6 +20,10 @@
 // "prompt-sync" is a specific package that allows us to get input from the terminal.
 // The extra '()' at the end immediately initializes/activates the tool so it's ready to use.
 // We store this tool inside a constant variable named 'prompt'.
+
+
+
+//-------------------------step-01--------------------------
 const prompt = require("prompt-sync")();
 
 // This is an ES6 Arrow Function. It's like a machine waiting to be turned on.
@@ -38,4 +42,20 @@ const deposit = () => {
 };
 
 const depositAmount=deposit();
-console.log(depositAmount);
+
+
+//-------------------------step-02--------------------------
+const getNumberOfLines=()=>{
+    while (true) {
+
+    const numberOFLines = prompt("Enter the number of lines to bet on(1-3):");
+    const numberLines = parseFloat(numberOFLines); 
+
+    if (isNaN(numberLines) || numberLines <= 0 || numberLines > 3) {
+      console.log("Invalid number of lines, try again.");
+    }else{
+        return numberLines;
+    }
+  }
+
+}
