@@ -36,6 +36,7 @@ const deposit=()=>{
     // CRITICAL NOTE: Anything the user types comes in as text (a "String"), 
     // even if they type numbers like "50".
     const depositAmount=prompt("Enter a deposit amount:");
+    const numberDepositAmount=parseFloat(depositAmount);//This line converts the text into a number (a "Float").
 }
 
 deposit();
