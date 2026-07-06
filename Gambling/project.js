@@ -28,15 +28,12 @@ const prompt=require("prompt-sync")();
 
 // This is an ES6 Arrow Function. It's like a machine waiting to be turned on.
 const deposit=()=>{
-    // 1. This line does three things:
-    //    a. It pauses the program execution.
-    //    b. It prints "Enter a deposit amount: " in the terminal.
-    //    c. It waits for the user to type a number and hit 'Enter'.
-    // 2. Whatever the user types is caught and stored inside 'depositAmount'.
-    // CRITICAL NOTE: Anything the user types comes in as text (a "String"), 
-    // even if they type numbers like "50".
     const depositAmount=prompt("Enter a deposit amount:");
-    const numberDepositAmount=parseFloat(depositAmount);//This line converts the text into a number (a "Float").
+    const numberDepositAmount=parseFloat(depositAmount);//This line converts the text into a number (a "Float"). Hello->NaN, 50->50, 50.5->50.5
+
+    if(isNaN(numberDepositAmount) || numberDepositAmount<=0){
+        console.log("Invalid deposit amount, try again.");
+    }
 }
 
 deposit();
