@@ -58,7 +58,7 @@ const getNumberOfLines=()=>{
 
 }
 
-const getbet=(balance)=>{
+const getBet=(balance)=>{
   while(true){
     const bet=prompt("Enter the total bet: ");
     const numberBet=parseFloat(bet);
@@ -73,4 +73,5 @@ const getbet=(balance)=>{
 
 let balance=deposit();
 const numberOfLines=getNumberOfLines();
+const bet=getBet(balance);
 
