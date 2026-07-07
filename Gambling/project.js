@@ -41,8 +41,6 @@ const deposit = () => {
   }
 };
 
-const depositAmount=deposit();
-
 
 //-------------------------step-02--------------------------
 const getNumberOfLines=()=>{
@@ -59,3 +57,18 @@ const getNumberOfLines=()=>{
   }
 
 }
+
+const getbet=(balance)=>{
+  while(true){
+    const bet=prompt("Enter the total bet: ");
+    const numberBet=parseFloat(bet);
+
+    if(isNaN(numberBet) || numberBet<=0 || numberBet>balance){
+      console.log("Invalid bet amount, try again.");
+    }
+  }
+}
+
+let balance=deposit();
+const numberOfLines=getNumberOfLines();
+
