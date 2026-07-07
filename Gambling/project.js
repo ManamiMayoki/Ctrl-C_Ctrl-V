@@ -23,9 +23,15 @@
 
 
 
-//-------------------------step-01--------------------------
-const prompt = require("prompt-sync")();
 
+const prompt = require("prompt-sync")();
+const ROWS=3;//const are all in capital letters
+const COLS=3;
+
+
+
+
+//-------------------------step-01--------------------------
 // This is an ES6 Arrow Function. It's like a machine waiting to be turned on.
 const deposit = () => {
   while (true) {
