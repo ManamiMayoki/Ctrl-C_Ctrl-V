@@ -65,6 +65,8 @@ const getbet=(balance)=>{
 
     if(isNaN(numberBet) || numberBet<=0 || numberBet>balance){
       console.log("Invalid bet amount, try again.");
+    }else{
+      return numberBet;
     }
   }
 }
